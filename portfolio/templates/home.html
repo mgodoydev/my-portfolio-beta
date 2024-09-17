@@ -3,13 +3,13 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<header class="text-center mb-8">
+<header class="text-center mb-8 max-w-3xl mx-auto px-4">
     <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
     <p class="text-lg mb-6">Hi, I'm Mathias Godoy, a junior backend developer eager to start my career. I specialize in Python and Django and am passionate about creating efficient and scalable systems.</p>
-    <a href="{% url 'projects' %}" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">View My Projects</a>
+    <!-- <a href="{% url 'projects' %}" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">View My Projects</a> -->
 </header>
 
-<section id="about" class="container mx-auto mb-10">
+<section id="about" class="container mx-auto mb-10 max-w-3xl px-4">
     <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
     <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
         <p>
@@ -18,59 +18,25 @@
     </div>
 </section>
 
-<section id="skills" class="container mx-auto mb-10">
+<section id="skills" class="container mx-auto mb-10 max-w-5xl px-4">
     <h2 class="text-3xl font-semibold text-center mb-6">My Skills</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Skill 1 -->
+        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg transition transform hover:scale-105">
             <h4 class="text-xl font-bold mb-2">Python</h4>
             <p>Knowledgeable in Python programming, with hands-on experience in developing backend applications.</p>
         </div>
-        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+        <!-- Skill 2 -->
+        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg transition transform hover:scale-105">
             <h4 class="text-xl font-bold mb-2">Django</h4>
             <p>Familiar with Django for building web applications, including working with views, models, and templates.</p>
         </div>
-        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+        <!-- Skill 3 -->
+        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg transition transform hover:scale-105">
             <h4 class="text-xl font-bold mb-2">PostgreSQL</h4>
             <p>Basic experience with PostgreSQL for database management, including writing queries and designing schemas.</p>
         </div>
     </div>
 </section>
 
-
-    <!-- <section id="contact" class="container mb-5">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <div class="card bg-dark text-light">
-            <div class="card-body text-center">
-                <p>If you're interested in working with me or would like to discuss potential opportunities, please reach out via email or connect with me on LinkedIn.</p>
-                <a href="mailto:mathiasgodoydev@gmail.com" class="btn btn-outline-light">Email Me</a>
-                <a href="https://www.linkedin.com/in/mathiasgodoy/" class="btn btn-outline-light" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section id="testimonials" class="container mb-5">
-        <h2 class="text-center mb-4">Testimonials</h2>
-        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <p>"Mathias is a dedicated junior developer with a strong foundation in backend technologies. His enthusiasm and willingness to learn make him a promising candidate."</p>
-                            <footer>- Alex Johnson, Mentor</footer>
-                        </div>
-                    </div>
-                </div>
-                <!-- Puedes añadir más testimonios si es necesario -->
-            <!-- </div>
-            <Si decides añadir más testimonios, descomenta los controles
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section> -->
 {% endblock %}
