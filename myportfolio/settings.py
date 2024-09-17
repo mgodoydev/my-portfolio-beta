@@ -81,6 +81,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Reemplaza con el host de tu servidor SMTP
+EMAIL_PORT = 587  # O 465 si usas SSL
+EMAIL_USE_TLS = True  # O EMAIL_USE_SSL = True si usas SSL
+EMAIL_HOST_USER = 'mathiasgodoydev@gmail.com'
+EMAIL_HOST_PASSWORD = 'xdah evlk zojr uslu'
+# DEFAULT_FROM_EMAIL = 'your-email@example.com'
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 

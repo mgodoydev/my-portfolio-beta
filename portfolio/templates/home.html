@@ -3,53 +3,39 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <header class="text-center mb-4">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Mathias Godoy, a junior backend developer eager to start my career. I specialize in Python and Django and am passionate about creating efficient and scalable systems.</p>
-        <a href="{% url 'projects' %}" class="btn btn-primary">View My Projects</a>
-    </header>
+<header class="text-center mb-8">
+    <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+    <p class="text-lg mb-6">Hi, I'm Mathias Godoy, a junior backend developer eager to start my career. I specialize in Python and Django and am passionate about creating efficient and scalable systems.</p>
+    <a href="{% url 'projects' %}" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">View My Projects</a>
+</header>
 
-    <section id="about" class="container mb-5">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="card bg-dark text-light">
-            <div class="card-body">
-                <p>
-                    I recently completed my studies in backend development and am excited to begin my professional journey. My focus has been on Python and Django, and I've been working on personal projects to build practical skills. I'm enthusiastic about learning and ready to contribute to a team where I can grow and apply my knowledge.
-                </p>
-            </div>
-        </div>
-    </section>
+<section id="about" class="container mx-auto mb-10">
+    <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
+    <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+        <p>
+            I recently completed my studies in backend development and am excited to begin my professional journey. My focus has been on Python and Django, and I've been working on personal projects to build practical skills. I'm enthusiastic about learning and ready to contribute to a team where I can grow and apply my knowledge.
+        </p>
+    </div>
+</section>
 
-    <section id="skills" class="container mb-5">
-        <h2 class="text-center mb-4">My Skills</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card bg-dark text-light">
-                    <div class="card-body">
-                        <h4 class="card-title">Python</h4>
-                        <p class="card-text">Knowledgeable in Python programming, with hands-on experience in developing backend applications.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-dark text-light">
-                    <div class="card-body">
-                        <h4 class="card-title">Django</h4>
-                        <p class="card-text">Familiar with Django for building web applications, including working with views, models, and templates.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-dark text-light">
-                    <div class="card-body">
-                        <h4 class="card-title">PostgreSQL</h4>
-                        <p class="card-text">Basic experience with PostgreSQL for database management, including writing queries and designing schemas.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Puedes añadir más habilidades si es necesario -->
+<section id="skills" class="container mx-auto mb-10">
+    <h2 class="text-3xl font-semibold text-center mb-6">My Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Python</h4>
+            <p>Knowledgeable in Python programming, with hands-on experience in developing backend applications.</p>
         </div>
-    </section>
+        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Django</h4>
+            <p>Familiar with Django for building web applications, including working with views, models, and templates.</p>
+        </div>
+        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+            <h4 class="text-xl font-bold mb-2">PostgreSQL</h4>
+            <p>Basic experience with PostgreSQL for database management, including writing queries and designing schemas.</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- <section id="contact" class="container mb-5">
         <h2 class="text-center mb-4">Contact Me</h2>
